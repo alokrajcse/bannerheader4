@@ -44,6 +44,36 @@
     }
   </style>
 </head>
+
+   <script>
+
+
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('copy', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function (e) {
+        var target = e.target;
+        if (target.nodeName === 'IMG' || target.nodeName === 'A') {
+            e.preventDefault();
+        }
+    });
+  </script>
+
 <body>
   <div class="banner">
     <h1>Discover <span style="color: #FF85A1;">A</span><span style="color: #FFD3B6;">S</span><span style="color: #F9CACD;">S</span><span style="color: #B6C5D2;">A</span><span style="color: #FF85A1;">N</span></h1>
