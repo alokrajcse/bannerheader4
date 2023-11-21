@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     carouselHTML += `
                         <div class="carousel-item ${activeClass}">
                             <img src="${event.imageUrl}" alt="${event.eventName}" class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
                                 <h5>${event.eventName}</h5>
                                 <p>${event.eventDate}</p>
                             </div>
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Autoplay the carousel
             $('.carousel').carousel({
-                interval: 1000, // Adjust the interval (in milliseconds) for autoscroll
+                interval: 5000, // Adjust the interval (in milliseconds) for autoscroll
                 pause: 'hover', // Pause on hover
             });
 
