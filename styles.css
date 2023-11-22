@@ -35,6 +35,22 @@
         padding: 10px; /* Further decreased padding for smaller caption container */
     }
 }
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .banner {
+    padding: 1.25em; /* Adjusted padding for smaller screens */
+    height: 30vh; /* Set banner height to 30% of the viewport height */
+    overflow: hidden; /* Crop overflow content */
+  }
+  .banner h1 {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+    letter-spacing: 0.0625em; /* Adjusted letter spacing for smaller screens */
+  }
+  .banner p {
+    font-size: 1em; /* Adjusted font size for smaller screens */
+    margin: 0.625em 0; /* Adjusted margin for smaller screens */
+  }
+}
 
 /* Hide caption on larger screens */
 @media (min-width: 768px) {
