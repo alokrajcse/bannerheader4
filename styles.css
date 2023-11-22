@@ -2,6 +2,7 @@
 
 #carousel-container {
     width: 100%;
+    height: 150px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -15,10 +16,10 @@
     background: rgba(0, 0, 0, 0.7);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 15px; /* Decreased padding for smaller caption container */
+    padding: 10px; /* Decreased padding for smaller caption container */
     text-align: center;
     color: #fff;
-    font-size: 16px; /* Decreased font size for captions */
+    font-size: 14px; /* Decreased font size for captions */
     opacity: 0.9;
     transition: opacity 0.5s ease;
 }
@@ -31,10 +32,11 @@
 @media (max-width: 767.98px) {
     .carousel-caption {
         opacity: 1;
-        font-size: 14px; /* Further decreased font size for mobile */
-        padding: 10px; /* Further decreased padding for smaller caption container */
+        font-size: 12px; /* Further decreased font size for mobile */
+        padding: 8px; /* Further decreased padding for smaller caption container */
     }
 }
+
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
   .banner {
