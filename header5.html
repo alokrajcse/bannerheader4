@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASSAN - Simplifying Your College Life</title>
+  <style>
+    /* Set a base font size for the body */
+    body {
+      font-size: 16px;
+    }
+
+    /* Customize the banner styles */
+    .banner {
+      background-color: #E4004E;
+      color: #FFFFFF;
+      padding: 1.875em; /* 30px converted to em */
+      text-align: center;
+      border-radius: 0.625em; /* 10px converted to em */
+      box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1); /* 0 2px 4px converted to em */
+      font-family: 'Arial', sans-serif;
+    }
+    .banner h1 {
+      font-size: 2.25em; /* 36px converted to em */
+      margin: 0;
+      letter-spacing: 0.125em; /* 2px converted to em */
+    }
+    .banner p {
+      font-size: 1.25em; /* 20px converted to em */
+      margin: 0.9375em 0; /* 15px converted to em */
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+      .banner {
+        padding: 1.25em; /* Adjusted padding for smaller screens */
+      }
+      .banner h1 {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+        letter-spacing: 0.0625em; /* Adjusted letter spacing for smaller screens */
+      }
+      .banner p {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+        margin: 0.625em 0; /* Adjusted margin for smaller screens */
+      }
+    }
+  </style>
+</head>
+
+   <script>
+
+
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('copy', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function (e) {
+        var target = e.target;
+        if (target.nodeName === 'IMG' || target.nodeName === 'A') {
+            e.preventDefault();
+        }
+    });
+  </script>
+
+<body>
+  <div class="banner">
+    <h1>Discover <span style="color: #FF85A1;">A</span><span style="color: #FFD3B6;">S</span><span style="color: #F9CACD;">S</span><span style="color: #B6C5D2;">A</span><span style="color: #FF85A1;">N</span></h1>
+    <p>Streamline your college experience with ASSAN, the ultimate college app designed to make your college life easier.</p>
+  </div>
+</body>
+</html>
